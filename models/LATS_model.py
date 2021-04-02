@@ -23,7 +23,6 @@ class LATS(BaseModel): #Lifetime Age Transformation Synthesis
         self.isTrain = opt.isTrain
         self.traverse = (not self.isTrain) and opt.traverse
 
-        # mode to generate Fig. 15 in the paper
         self.compare_to_trained_outputs = (not self.isTrain) and opt.compare_to_trained_outputs
         if self.compare_to_trained_outputs:
             self.compare_to_trained_class = opt.compare_to_trained_class
