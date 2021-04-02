@@ -186,3 +186,5 @@ class preprocessInTheWildImage():
         seg_map = self.get_segmentation_maps(aligned_img)
         aligned_img = np.array(aligned_img.getdata(), dtype=np.uint8).reshape(self.out_size, self.out_size, 3)
         return aligned_img, seg_map
+
+    
